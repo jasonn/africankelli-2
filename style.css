@@ -1,0 +1,486 @@
+/*
+Theme Name: Africankelli
+Theme URI: http://jason.newlin.me
+Description: Theme for the Africankelli web site.
+Version: 2.0
+Author: Design - Jason Newlin
+Author URI: http://jason.newlin.me
+
+	
+
+*/
+
+/* -------------------------------------------------------------- 
+  
+   reset.css
+   * Resets default browser CSS.
+   
+-------------------------------------------------------------- */
+ 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+ 
+body { 
+  line-height: 1.5; 
+}
+ 
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+ 
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+ 
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+/* -------------------------------------------------------------- 
+   
+   typography.css
+   * Sets up some sensible default typography.
+   
+-------------------------------------------------------------- */
+ 
+/* Default font settings. 
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+body { 
+  font-size: 100.1%;
+  color: #757575; 
+  background-color: #fceddb;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ 
+ 
+/* Headings
+-------------------------------------------------------------- */
+ 
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
+ 
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+ 
+h1 img, h2 img, h3 img, 
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+ 
+ 
+/* Text elements
+-------------------------------------------------------------- */
+ 
+p           { margin: 0 0 1.5em; }
+p img.left  { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
+ 
+a:focus, 
+a:hover     { color: #000; }
+a           { color: #009; outline-width: 0; text-decoration: underline; }
+ 
+blockquote  { margin: 1.5em; color: #666; font-style: italic; }
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+ 
+abbr, 
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { color:#666; }
+ 
+pre         { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+ 
+ 
+/* Lists
+-------------------------------------------------------------- */
+ 
+li ul, 
+li ol       { margin:0 1.5em; }
+ul, ol      { margin: 0 1.5em 1.5em 1.5em; }
+ 
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+ 
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+#nav ol, #nav ul, .nav ol, .nav ul, ol.nav, ul.nav {list-style: none; margin: 0;}
+ 
+ 
+/* Tables
+-------------------------------------------------------------- */
+ 
+table       { margin-bottom: 1.4em; width:100%; }
+th          { font-weight: bold; }
+thead th     { background: #c3d9ff; }
+th,td,caption { padding: 4px 10px 4px 5px; }
+tr.even td  { background: #e5ecf9; }
+tfoot       { font-style: italic; }
+caption     { background: #eee; }
+
+
+/* -------------------------------------------------------------- 
+ 
+   forms.css
+   * Sets up some default styling for forms
+   * Gives you classes to enhance your forms
+   
+   Usage:
+   * For text fields, use class .title or .text
+   * For inline forms, use .inline (even when using columns)
+   
+-------------------------------------------------------------- */
+ 
+label       { font-weight: bold; }
+fieldset    { margin: 0 0 1.5em 0; border-width: 0; }
+legend      { font-weight: bold; font-size:1.2em; }
+label span 	{ font-weight: normal; }
+ 
+ 
+/* Form fields
+-------------------------------------------------------------- */
+ 
+input[type=text],
+input.text, input.title, 
+textarea, select { 
+  background-color:#fff; 
+  border:1px solid #bbb; 
+}
+input[type=text]:focus, 
+input.text:focus, input.title:focus, 
+textarea:focus, select:focus { 
+  border-color:#666; 
+}
+ 
+input[type=text], 
+input.text, input.title,
+textarea, select {
+  margin:0.5em 0;
+}
+ 
+input.text, 
+input.title   { width: 300px; padding:5px; }
+input.title   { font-size:1.5em; }
+textarea      { width: 390px; height: 250px; padding:5px; }
+
+
+/* General styles
+-------------------------------------------------------------- */
+
+h3 {margin-bottom: 7px;}
+
+.search-excerpt {background-color: #ffffcc;}
+
+ol.nav li.next a, ol.nav li.previous a {text-decoration: none;}
+ol.nav li.next a:hover, ol.nav li.previous a:hover {text-decoration: underline;}
+
+
+/* Layout
+-------------------------------------------------------------- */
+
+#header {background-color: #f1f1ae; height: 280px; margin: 0 auto; width: 980px;}
+#header .title {font-size: 2.5em; line-height: 1em; padding: 80px 20px 0; position: relative;}
+#header .title a {}
+
+#nav {background-color: #e0d1bf; height: 63px; margin: 0 auto; width: 980px;}
+#nav ol {overflow: hidden; padding: 6px 20px;}
+#nav ol li {float: left; margin-right: 12px;}
+
+#content-wrapper {background-color: #fff; margin: 0 auto; padding: 0 10px; position: relative; width: 960px;}
+#content-wrapper .header-shadow {position: absolute; height: 8px; width: 960px;}
+#content-wrapper p.results {margin-bottom: 0px; padding: 15px 10px 10px;}
+#content-wrapper ol.nav.paged {height: 50px; padding: 0 35px; z-index: 100; position: relative;}
+#content-wrapper ol.nav.paged .next {float: left;}
+#content-wrapper ol.nav.paged .previous {float: right;}
+
+#footer {background-color: #e0d1bf; padding: 15px 0 35px; z-index: 1;}
+#footer .section {overflow: hidden; padding: 0 10px;}
+#footer .column-one {float: left; width: 520px;}
+#footer .column-two {margin-left: 540px;}
+
+#monthly-archives {font-size: 0.9em; margin: 0 0 25px 0; overflow: hidden;}
+#monthly-archives dt, dl#monthly-archives dd {border-bottom: 1px solid #757575; float: left; margin-bottom: 4px; text-align: center; width: 7.65%;}
+#monthly-archives dt {clear: both;}
+#monthly-archives dd {margin-left: 0;}
+#monthly-archives a {display: block;}
+
+#searchform {}
+
+#footer h3 .view-all {color: #cce9b3; font-size: 0.59em; margin-left: 215px;}
+
+#footer .category-list {list-style: none; margin: 0 0 25px;}
+#footer .category-list li {margin-bottom: 5px; overflow: hidden; padding-left: 20px;}
+#footer .category-list li a.image-wrapper {border: solid 4px #fff; float: left; display: block; height: 67px; width: 100px;}
+#footer .category-list li a.image-wrapper:hover {border-color: #ccc;}
+#footer .category-list li .title-wrapper {margin: 5px 0 0 125px;}
+
+#searchform .form-field {margin-bottom: 25px; overflow: hidden;}
+#searchform .form-field input {float: left;}
+#searchform .form-field input.text {width: 385px;}
+#searchform .form-field input.submit {margin: 8px 0 0 8px;}
+
+#footer .nav li {float: left; font-size: 0.9em; margin-right: 10px;}
+#footer .nav li a {text-decoration: none;}
+#footer .nav li a:hover {text-decoration: underline;}
+
+.flickr-photos {float: left; margin-bottom: 6px; overflow: hidden; width: 420px;}
+.flickr-photos .single-image {display: block; float: left; height: 91px; margin-right: 12px; margin-bottom: 12px; width: 91px;}
+.flickr-photos .single-image a {border: solid 1px #fff; display: block; height: 75px; margin: 7px 0 0 7px; width: 75px;}
+.flickr-photos .single-image a:hover {border: solid 1px #000;}
+
+.nav.friends-list {margin-bottom: 25px; overflow: hidden;}
+#footer .nav.friends-list li {display: inline; margin-right: 5px;}
+
+.about-the-author h3 {width: 270px;}
+.about-the-author p {margin-bottom: 0;}
+.about-the-author p img {border: solid 8px #fff; float: right; margin: -30px 0 10px 15px;}
+
+.craft-along {background: url(images/craft-along.png) 0 0 no-repeat; display: block; height: 44px; margin-top: 12px; text-indent: -8000px; width: 89px;}
+
+#copyright {margin: 0 auto; padding-bottom: 25px; width: 980px;}
+#copyright p {margin-bottom: 0; padding: 10px 20px; text-align: right;}
+
+
+/* Post layout
+-------------------------------------------------------------- */
+
+.article {overflow: hidden; padding: 35px 10px 25px;}
+.article h1, .article h2 {font-size: 2.5em; line-height: 1.0em; margin: 0 180px 35px 120px;}
+.article h2 a {text-decoration: none;}
+.article h2 a:hover {text-decoration: underline;}
+.article p.date {float: left; font-size: 0.80em; margin-bottom: 0; width: 100px;}
+
+.article .section {float: left; margin-left: 20px; width: 640px;}
+.article .section p, .article .section ul li, .article .section ol li, .article .section blockquote {text-align: left;}
+.article .section p a {}
+.article .section p a.tt-flickr, .article .section .flickrPhoto a.tt-flickr {display: block; margin: 0 auto; padding: 0; text-align: center; text-decoration: none; width: 640px;}
+.article .section p a.tt-flickr img, .article .section .flickrPhoto a.tt-flickr img {border: solid 12px #e1e1e1; display: block; margin: 0 auto;}
+.article .section .flickrPhoto {margin-bottom: 1.5em;}
+
+.article .aside {font-size: 0.85em; margin: 0 0 0 780px; width: 160px;}
+.article .aside dd {margin-bottom: 8px; margin-left: 0;}
+.article .aside a {text-decoration: none;}
+.article .aside a:hover {text-decoration: underline;}
+
+.excerpt .aside {clear: left; font-size: 0.75em; margin: 0 0 0 120px; width: 640px;}
+
+.page .section {margin-left: 120px;}
+
+
+/* Comments layout
+-------------------------------------------------------------- */
+
+.comments-wrapper {margin-left: 130px; position: relative; width: 640px;}
+.comments-wrapper h3 {margin-bottom: 15px;}
+
+.comments-wrapper #respond p {font-size: 0.85em; margin-bottom: 5px;}
+.comments-wrapper #respond label {display: block;}
+.comments-wrapper #respond textarea {height: 180px; width: 628px;}
+
+.commentlist {list-style: none; margin: 0 0 15px;}
+.commentlist li {margin-bottom: 25px;}
+.commentlist li ul {margin-right: 0; margin-left: 20px;}
+.commentlist li .children {list-style: none; margin-top: 10px;}
+.commentlist li .children li {margin-bottom: 10px;}
+
+.commentlist .comment-author {float: left; font-size: 0.75em; width: 140px;}
+.commentlist .comment-author img {background-color: #efefef; border: solid 1px #ccc; padding: 5px;}
+.commentlist .comment-author cite {display: block; font-size: 1.25em; font-style: normal; width: 140px;}
+.commentlist .comment-author a.comment-link {text-decoration: none;}
+
+.commentlist .comment-content {border: solid 1px #ccc; font-size: 0.90em; margin-left: 150px; padding: 10px;}
+.commentlist li.odd .comment-content {}
+.commentlist li.even .comment-content {}
+.commentlist li.comment-author-admin .comment-content {background-color: #FCEDDB;}
+
+.single-comment {position: relative; overflow: hidden;}
+
+.commentlist li .children .comment-content {border-left-width: 5px;}
+
+
+
+
+
+/* Page specific
+-------------------------------------------------------------- */
+
+.content {overflow: hidden; padding: 35px 10px 25px;}
+
+.content .column-one {float: left; margin-right: 10px; width: 300px;}
+.content .column-two {float: left; margin: 0 10px; width: 300px;}
+.content .column-three {float: left; margin: 0 0 0 10px; width: 300px;}
+
+.content .column-one-two {float: left; margin-right: 10px; width: 460px;}
+.content .column-two-two {float: left; margin-left: 10px; width: 460px;}
+
+ol.archive-list {margin: 0;}
+ol.archive-list li {list-style: none; overflow: hidden;}
+
+ul.archive-list {list-style: none; margin: 0 0 15px; text-align: right;}
+ul.archive-list li a {float: left;}
+ul.archive-list.no-float {text-align: left;}
+ul.archive-list.no-float li a {float: none;}
+
+ul.archive-list li .children {list-style: none;}
+
+.archive-list {color: #ccc; overflow: hidden; }
+.archive-list li {margin-bottom: 2px;}
+
+ul.page-list {text-align: left;}
+ul.page-list li a {float: none;}
+
+.recent-posts {list-style: none; margin: 0 0 15px;}
+
+
+/* Image Captions
+-------------------------------------------------------------- */
+
+.caption-top, .caption-bottom {
+	color: #fff;
+	cursor: pointer;
+	padding: 12px;	
+	font-weight: bold;
+	font-size: 15px;
+	border: 0px solid #334143;
+	background: #000;
+	text-align: left;
+}
+
+.caption-top, .caption-bottom {border-width: 0;}
+.caption-wrapper {display: block; margin: 0 auto;}
+
+
+
+/* Theme specific
+-------------------------------------------------------------- */
+
+body {background-image: url(images/paper-texture-background.jpg); background-position: center top; background-repeat: repeat; color: #727730;}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a {
+	color: #727730;
+	font-family: Baskerville, "Baskerville Old Face", "Palatino Linotype", Georgia, "Times New Roman", "Bitstream Charter", serif;
+	font-style: italic;
+}
+
+a {color: #55b400; text-decoration: none;}
+a:hover {color: #55b400; text-decoration: underline;}
+
+#header {background-color: transparent; background-image: url(images/header-background.png); background-position: 0 0; background-repeat: no-repeat; position: relative;}
+#nav {background-color: transparent; background-image: url(images/nav-background.png); background-position: 0 0; background-repeat: no-repeat; position: absolute; left: 0; top: 0;}
+#header .title {background-image: url(images/africankelli.png); background-position: 0 0; background-repeat: no-repeat; bottom: 19px; height: 198px; margin: 0; padding: 0; position: absolute; right: 10px; text-indent: -8000px; width: 310px;}
+#header .title a {display: block; height: 198px; width: 310px;}
+#content-wrapper {background-color: transparent; background-image: url(images/content-background.png); background-position: 0 0; background-repeat: repeat-y;}
+
+#content-wrapper .header-shadow {background: url(images/header-shadow.png) 0 0 repeat-x;}
+#content-wrapper p.results {color: #ff9bcd;}
+
+.article {background-image: url(images/article-gradient-background.png); background-position: 0 0; background-repeat: repeat-x;}
+.article .date {color: #ff9bcd;}
+.article .section p a.tt-flickr img, .article .section .flickrPhoto a.tt-flickr img {border-color: #f0f0ac;}
+
+.commentlist .comment-content {border: solid 1px #e1e15a;}
+.commentlist .comment-author img {background-color: #f0f0ac; border: solid 1px #e1e15a;}
+.commentlist li.comment-author-admin .comment-content {background-color: #f0f0ac;}
+
+#footer {background: #55b400 url(images/grass-background.jpg) 0 0 no-repeat; color: #cce9b3; margin-top: -50px; padding-top: 190px;}
+#footer h3, #footer a {color: #fff;}
+#footer h3 {font-size: 2.0em;}
+#footer #searchform label {display: none;}
+
+#footer #monthly-archives {color: #cce9b3;}
+#footer #monthly-archives dt, #footer #monthly-archives dd {border-color: #cce9b3;}
+
+#footer .category-list li a.image-wrapper {border-color: #cce9b3;}
+#footer .category-list li a.image-wrapper:hover {border-color: #fff;}
+#footer .category-list li .title-wrapper {font-size: 1.5em;}
+#footer .category-list li .title-wrapper a {color: #cce9b3; font-family: Baskerville, "Baskerville Old Face", "Palatino Linotype", Georgia, "Times New Roman", "Bitstream Charter", serif; font-style: italic;}
+
+.flickr-photos .single-image {background: url(images/flickr-thumb-background.png) 0 0 no-repeat;}
+.flickr-photos .single-image a:hover {border: solid 1px #cce9b3;}
+
+.about-the-author p img {border-color: #cce9b3;}
+
+#copyright {background: url(images/footer-background.png) 0 0 no-repeat; height: 35px;}
+#copyright p {display: none;}
+
+#nav ol li a {background-image: url(images/main-navigation-background.jpg); background-position: 0 0; background-repeat: repeat-x; display: block; text-indent: -8000px;}
+#nav ol li a {height: 30px;}
+#nav ol a.about {width: 72px;}
+#nav ol li a.about:hover {background-position: 0 -30px;}
+#nav ol a.archives {background-position: -72px 0; width: 93px;}
+#nav ol li a.archives:hover {background-position: -72px -30px;}
+#nav ol a.contact {width: 116px; background-position: -165px 0;}
+#nav ol li a.contact:hover {background-position: -165px -30px;}
+
+input[type=text],
+input.text, input.title, 
+textarea, select {
+  border:1px solid #e1e15a; 
+}
+input[type=text]:focus, 
+input.text:focus, input.title:focus, 
+textarea:focus, select:focus { 
+  border-color:#f0f0ac; 
+}
+
+
+.tooltip {
+	background: transparent url(images/home-background.png) 0 0 no-repeat;
+	color: #fff;
+	display: none;
+	height: 75px;
+	padding: 32px 25px 0;
+	width: 110px;
+}
+
+#header .tooltip a {height: 28px; width: 110px;}
+
+form dl, dl.labels {
+margin:0em;
+font-size:100%;
+margin-top:0.5em
+}
+form dt, dl.labels dt {
+float:left;
+
+width:10em;
+margin-bottom:0.8em;
+color:#555;
+text-align:right;
+font-weight:normal;
+position:relative /*IEWin hack*/
+}
+form dd, dl.labels dd {
+margin-left:10.5em;
+margin-bottom:0.8em;
+font-size:100%;
+font-style:normal;
+padding-left:0.5em
+}
+form dd.submit, dl.labels dd.submit {
+margin-top:2em
+}
+
+
+
+
