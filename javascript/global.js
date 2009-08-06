@@ -41,16 +41,12 @@ $(function () {
   
   $('.title a').tooltip({position: ['bottom', 'center'],slideOffset: 50});
   
-  $('a.tt-flickr img:below-the-fold').lazyload({
-      effect : "fadeIn", 
-       event : "sporty"
-   });
-});
+  $('a.tt-flickr img').lazyload({
+      threshold : 500,
+      effect : "fadeIn" 
+  });
 
-$(window).bind('load', function() { 
-   var timeout = setTimeout(function() { $("img").trigger("sporty") }, 5000);
-});      
-      
+});
 
 
 

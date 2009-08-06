@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a {
 a {color: #55b400; text-decoration: none;}
 a:hover {color: #55b400; text-decoration: underline;}
 
-#header {background-color: transparent; background-image: url(images/header-background.png); background-position: 0 0; background-repeat: no-repeat; position: relative;}
+#header {background-color: transparent; background-image: url(images/header-background.jpg); background-position: 0 0; background-repeat: no-repeat; position: relative;}
 #nav {background-color: transparent; background-image: url(images/nav-background.png); background-position: 0 0; background-repeat: no-repeat; position: absolute; left: 0; top: 0;}
 #header .title {background-image: url(images/africankelli.png); background-position: 0 0; background-repeat: no-repeat; bottom: 19px; height: 198px; margin: 0; padding: 0; position: absolute; right: 10px; text-indent: -8000px; width: 310px;}
 #header .title a {display: block; height: 198px; width: 310px;}
