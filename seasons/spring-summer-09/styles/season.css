@@ -1,0 +1,80 @@
+body {background-image: url(../images/paper-texture-background.jpg); background-position: center top; background-repeat: repeat; color: #727730;}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a {
+	color: #727730;
+	font-family: Baskerville, "Baskerville Old Face", "Palatino Linotype", Georgia, "Times New Roman", "Bitstream Charter", serif;
+	font-style: italic;
+}
+
+a {color: #55b400; text-decoration: none;}
+a:hover {color: #55b400; text-decoration: underline;}
+
+#header {background-color: transparent; background-image: url(../images/header-background.jpg); background-position: 0 0; background-repeat: no-repeat; position: relative;}
+#nav {background-color: transparent; background-image: url(../images/nav-background.png); background-position: 0 0; background-repeat: no-repeat; position: absolute; left: 0; top: 0;}
+#header .title {background-image: url(../images/africankelli.png); background-position: 0 0; background-repeat: no-repeat; bottom: 19px; height: 198px; margin: 0; padding: 0; position: absolute; right: 10px; text-indent: -8000px; width: 310px;}
+#header .title a {display: block; height: 198px; width: 310px;}
+#content-wrapper {background-color: transparent; background-image: url(../images/content-background.png); background-position: 0 0; background-repeat: repeat-y;}
+
+#content-wrapper .header-shadow {background: url(../images/header-shadow.png) 0 0 repeat-x;}
+#content-wrapper p.results {color: #ff9bcd;}
+
+.article {background-image: url(../images/article-gradient-background.png); background-position: 0 0; background-repeat: repeat-x;}
+.article .date {color: #ff9bcd;}
+.article .section p a.tt-flickr img, .article .section .flickrPhoto a.tt-flickr img {border-color: #f0f0ac;}
+
+.commentlist .comment-content {border: solid 1px #e1e15a;}
+.commentlist .comment-author img {background-color: #f0f0ac; border: solid 1px #e1e15a;}
+.commentlist li.comment-author-admin .comment-content {background-color: #f0f0ac;}
+
+#footer {background: #55b400 url(../images/grass-background.jpg) 0 0 no-repeat; color: #cce9b3; margin-top: -50px; padding-top: 190px;}
+#footer h3, #footer a {color: #fff;}
+#footer h3 {font-size: 2.0em;}
+#footer #searchform label {display: none;}
+
+#footer #monthly-archives {color: #cce9b3;}
+#footer #monthly-archives dt, #footer #monthly-archives dd {border-color: #cce9b3;}
+
+#footer .category-list li a.image-wrapper {border-color: #cce9b3;}
+#footer .category-list li a.image-wrapper:hover {border-color: #fff;}
+#footer .category-list li .title-wrapper {font-size: 1.5em;}
+#footer .category-list li .title-wrapper a {color: #cce9b3; font-family: Baskerville, "Baskerville Old Face", "Palatino Linotype", Georgia, "Times New Roman", "Bitstream Charter", serif; font-style: italic;}
+
+.flickr-photos .single-image {background: url(../images/flickr-thumb-background.png) 0 0 no-repeat;}
+.flickr-photos .single-image a:hover {border: solid 1px #cce9b3;}
+
+.about-the-author p img {border-color: #cce9b3;}
+
+#copyright {background: url(../images/footer-background.png) 0 0 no-repeat; height: 35px;}
+#copyright p {display: none;}
+
+#nav ol li a {background-image: url(../images/main-navigation-background.jpg); background-position: 0 0; background-repeat: repeat-x; display: block; text-indent: -8000px;}
+#nav ol li a {height: 30px;}
+#nav ol a.about {width: 72px;}
+#nav ol li a.about:hover {background-position: 0 -30px;}
+#nav ol a.archives {background-position: -72px 0; width: 93px;}
+#nav ol li a.archives:hover {background-position: -72px -30px;}
+#nav ol a.contact {width: 116px; background-position: -165px 0;}
+#nav ol li a.contact:hover {background-position: -165px -30px;}
+
+input[type=text],
+input.text, input.title, 
+textarea, select {
+  border:1px solid #e1e15a; 
+}
+input[type=text]:focus, 
+input.text:focus, input.title:focus, 
+textarea:focus, select:focus { 
+  border-color:#f0f0ac; 
+}
+
+
+.tooltip {
+	background: transparent url(../images/home-background.png) 0 0 no-repeat;
+	color: #fff;
+	display: none;
+	height: 75px;
+	padding: 32px 25px 0;
+	width: 110px;
+}
+
+#header .tooltip a {height: 28px; width: 110px;}

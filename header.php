@@ -29,6 +29,7 @@
 	<meta name="keywords" content="africankelli, african kelli, domestic art, Calculated Acts of Kindness, CAOK, billy gibbons hat, wristlet tutorial, african nudu hat, purse organizer pattern, nudu cap, pattern for purse organizer, African Cameroon Nudu Tribal Hat, angle zipper tutorial, amy butler birdie sling tutorial, sewing 101, happy hippie, amy butler pattern, sewing tutorial, The Peace T-Shirt Project, africa, arizona" />
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/seasons/spring-summer-09/styles/season.css" type="text/css" media="screen" />
 	
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript/jquery.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript/global.js"></script>
