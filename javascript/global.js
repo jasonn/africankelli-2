@@ -43,12 +43,8 @@ $(function () {
   
   $('a.tt-flickr img:below-the-fold').lazyload({
       effect : "fadeIn", 
-      event : "flickr" 
+      threshold : 800
     });
-});
-
-$(window).bind("load", function() { 
-    var timeout = setTimeout(function() {$("a.tt-flickr img").trigger("flickr")}, 2000);
 });
 
 
